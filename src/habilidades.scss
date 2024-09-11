@@ -1,0 +1,23 @@
+@import "paleta-de-cores";
+
+.habilidades {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    h2 {
+      color: $azul;
+      font-size: 2.5rem;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-top: 2rem;
+
+      li {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

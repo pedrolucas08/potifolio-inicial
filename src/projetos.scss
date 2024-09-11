@@ -1,0 +1,42 @@
+@import "paleta-de-cores";
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4rem;
+
+  h2 {
+    font-size: 4rem;
+    color: $azul;
+  }
+
+  ul {
+    list-style-type: none;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, auto);
+
+    li {
+      width: 25rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      position: relative;
+      transition: all 0.5s;
+      cursor: pointer;
+      opacity: 0.5;
+      transition: all 0.5s;
+
+      img {
+        width: 100%;
+      }
+
+      &:hover {
+        transform: scale(1.8);
+        opacity: 1;
+        z-index: 10;
+      }
+    }
+  }
+}

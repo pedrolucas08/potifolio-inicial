@@ -1,0 +1,26 @@
+@import "paleta-de-cores";
+
+.contato {
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: $azul;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    input,
+    textarea {
+      width: 40rem;
+      color: $preto;
+      padding: 1rem;
+
+      &::placeholder {
+        color: $preto;
+      }
+    }
+  }
+}
